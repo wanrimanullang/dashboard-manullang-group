@@ -2,34 +2,14 @@
   <q-layout view="lHh lpr lFf">
     <q-header class="q-py-sm" style="background-color: #1c1b21;" :style="'border-bottom: 2px solid '+ theme_color">
         <q-toolbar>
-        <span :style="'font-size: 35px;color:'+theme_color" class="my-font text-h6 q-mr-md">Kudos</span>
+        <span :style="'font-size: 35px;color:'+theme_color" class="my-font text-h6 q-mr-md">Power Manullang Group</span>
         <q-space ></q-space>
       <q-tabs v-model="selected_tab" shrink>
-        <q-tab :style= "[selected_tab == 't_0' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_portfolio');" style="width:120px;min-height:auto !important;color: white" label="Portfolio" />
-        <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="About Us" />
-        <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Services" />
-        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Testimonial" />
-        <q-tab :style= "[selected_tab == 't_4' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_team');" style="width:120px;min-height:auto !important;color: white" label="Team" />
-        <q-tab :style= "[selected_tab == 't_5' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_pricing');" style="width:120px;min-height:auto !important;color: white" label="Pricing" />
-	<q-tab :style= "[selected_tab == 't_6' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_news');" style="width:120px;min-height:auto !important;color: white" label="News" />
-        <q-btn class="q-mr-md" size="12px" :style="'min-height:auto !important;background:'+ theme_color +'; color: white; padding:1px'" dense icon="color_lens">
-            <q-tooltip transition-show="flip-right"
-                       transition-hide="flip-left" self="center left" anchor="center right">Theme color
-            </q-tooltip>
-            <q-menu anchor="bottom left" self="bottom right" transition-show="flip-right"
-                    transition-hide="flip-left">
-              <q-color
-                v-model="bg_color"
-                no-header
-                no-footer
-                default-view="palette"
-                class="my-picker"
-                @input="changeBgColor()"
-              />
-            </q-menu>
-          </q-btn>
-          <a style="font-size: 25px;" class="float-right q-mr-sm" href="https://github.com/sponsors/mayank091193"
-           target="_blank" title="Donate"><i class="fas fa-heart" style="color: #eb5daa"></i></a>
+        <q-tab :style= "[selected_tab == 't_0' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_portfolio');" style="width:120px;min-height:auto !important;color: white" label="Dokumentasi" />
+        <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="Tentang Kami" />
+        <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Layanan" />
+        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Testimoni" />
+        <q-tab :style= "[selected_tab == 't_5' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_pricing');" style="width:120px;min-height:auto !important;color: white" label="Galeri" />
       </q-tabs>
         
       </q-toolbar>
@@ -49,125 +29,47 @@
           transition-next="slide-left"
           height="639px"
         >
-          <q-carousel-slide class="q-pa-none" :name="1" img-src="/statics/images/image_1.jpg">
-<div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
-            <div class="custom-caption">
-              <div class="text-h2 main_line animation_2">WELCOME TO <span :style="'color:'+theme_color">KUDOS</span></div><br><br><br>
-              <div class="text-h4 animation_1">The Web as I envisaged it, we have not seen it yet. The future<br> is still so much bigger than the past.</div><br><br><br>
-<div class="animation_2">
-<q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
+      <q-carousel-slide class="q-pa-none" :name="1" img-src="/statics/images/image_1.jpg">
+        <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
+          <div class="custom-caption">
+            <div class="text-h2 main_line animation_2">Melayani <br></br><span :style="'color:'+theme_color">Service Genset Berkualitas</span></div><br><br><br>
+            <div class="text-h4 animation_1">Teknisi Profesional<br>& Handal.</div><br><br><br>
+            <div class="animation_2">
+              <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
             </div>
-</div>
-          </q-carousel-slide>
-          <q-carousel-slide class="q-pa-none":name="2" img-src="/statics/images/image_2.jpg">
-<div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
-            <div class="custom-caption">
-    	      <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:'+theme_color">KUDOS</span> FOR THE BEST</div><br><br><br>
-              <div class="text-h4 animation_1">A man who dares to waste one hour of time has <br>not discovered the value of life.</div><br><br><br>
-<div class="animation_2">
-<q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
-            </div>
-</div>
-          </q-carousel-slide>
-          <q-carousel-slide class="q-pa-none":name="3" img-src="/statics/images/image_3.jpg">
-<div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
-            <div class="custom-caption">
-    	      <div class="text-h2 main_line animation_2" style="font-size:65px;">THE PATH OF <span :style="'color:'+theme_color">SUCCESS</span></div><br><br><br>
-              <div class="text-h4 animation_1">We have to stop optimizing for programmers and <br>start optimizing for users.</div><br><br><br>
-<div class="animation_2">
-<q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
-            </div>
-</div>
-          </q-carousel-slide>
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide class="q-pa-none":name="2" img-src="/statics/images/image_2.jpg">
+        <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
+          <div class="custom-caption">
+          <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:'+theme_color">Penyewaan dan Rental Genset</span></div><br><br><br>
+          <div class="text-h4 animation_1">Luar dalam kota Samarinda.</div><br><br><br>
+          <div class="animation_2">
+            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
+          </div>
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide class="q-pa-none":name="3" img-src="/statics/images/image_3.jpg">
+      <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
+        <div class="custom-caption">
+        <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:'+theme_color">Melayani <br></br></span>Replacement Genset Location</div><br><br><br>
+          <div class="text-h4 animation_1">daerah luar kota samarinda.</div><br><br><br>
+          <div class="animation_2">
+            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
+          </div>
+        </div>
+      </div>
+      </q-carousel-slide>
         </q-carousel>
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-            <q-card class="q-pa-sm flex flex-center text-center box-shadow" style="margin: 40px;">
-
-
-              <q-card-section>
-                <q-icon size="110px" name="ballot" :style="'color:'+theme_color"/>
-                <div class="text-h6">Web &nbsp;Design</div>
-
-              </q-card-section>
-
-              <q-card-section class="q-pt-none">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-            <q-card class="q-pa-sm flex flex-center text-center box-shadow" style="margin: 40px;">
-
-
-              <q-card-section>
-                <q-icon size="110px" name="view_comfy" :style="'color:'+theme_color"/>
-                <div class="text-h6">Graphics Design</div>
-
-              </q-card-section>
-
-              <q-card-section class="q-pt-none">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </q-card-section>
-            </q-card>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-            <q-card class="q-pa-sm flex flex-center text-center box-shadow" style="margin: 40px;">
-
-
-              <q-card-section>
-                <q-icon size="110px" name="people" :style="'color:'+theme_color"/>
-                <div class="text-h6">Wordpress Theme</div>
-
-              </q-card-section>
-
-              <q-card-section class="q-pt-none">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </q-card-section>
-            </q-card>
-          </div>
-
-          <div class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
-            <q-card class="q-pa-sm flex flex-center text-center box-shadow" style="margin: 40px;">
-
-
-              <q-card-section>
-                <q-icon size="110px" name="people" :style="'color:'+theme_color"/>
-                <div class="text-h6">Wordpress Plugin</div>
-
-              </q-card-section>
-
-              <q-card-section class="q-pt-none">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </q-card-section>
-            </q-card>
-          </div>
-        </div>
-        <div class="quote">
-          <div class="q-pt-xl full-width full-height flex flex-center" style="background-color: #000000ad !important;">
-            <h3 class="text-white text-center">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do
-              eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.
-              <br>
-              <br>
-              <q-btn type="a" href="https://github.com/sponsors/mayank091193" size="lg"
-                     :style="'background:'+ theme_color +'; color: white'" label="Support Me"/>
-            </h3>
-          </div>
-        </div>
         <div style="background: #f7f7f7" id="id_portfolio">
           <br>
           <div class="row">
             <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-              <h5 class="text-center">Our Portfolio
+              <h5 class="text-center">Dokumentasi Pelayanan
                 <br>
-                <span class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+                <span class="text-center text-grey text-h6">Pertambangan, Acara Pernikahan, Konser Musik, dan Gedung Perkantoran.</span>
               </h5>
             </div>
           </div>
@@ -183,15 +85,13 @@
                     <q-flashcard-section transition="fade-in" class="fit" :active="active">
                       <div class="fit" :style="background_style"></div>
                       <q-flashcard-section transition="drop-down" class="text-center my-header" :active="active">
-                        Profile Title
+                        Layanan
                       </q-flashcard-section>
                       <q-flashcard-section transition="slide-up-in" class="my-text" :active="active">
-                        For beautiful eyes, look for the good in others; for beautiful lips, speak only words of kindness; and for poise, walk with the knowledge that you are never alone.
+                        Mobilitas yang tinggi dalam mengirimkan genset luar dalam kota samarinda dan biaya service terjangkau, memiliki teknisi terpercaya dan profesional.
                       </q-flashcard-section>
                       <q-flashcard-section transition="fade-in" class="fit flex justify-center items-end q-pb-lg"
-                                           :active="active">
-                        <q-btn class="q-mr-md" :style="'color:'+theme_color" style="background-color:white" round
-                               icon="card_giftcard"/>
+                                          :active="active">
                         <q-btn :style="'color:'+theme_color" style="background-color:white" round icon="link"/>
                       </q-flashcard-section>
                     </q-flashcard-section>
@@ -204,10 +104,10 @@
         </div>
         <div class="row" id="id_about_us">
           <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <h5 class="text-center">About Us
+            <h5 class="text-center">Tentang kami
               <br>
               <span
-                class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                class="text-center text-grey text-h6">Kami melayani berbagai service yaitu menyewakan Genset, Melayani Maintanance Genset, dan Melayani Pemindahan Lokasi Genset. Kami berpengalaman dalam bidang Kelistrikan dan sudah bekerja sama beberapa perusahaan besar di samarinda yang meliputi Pertambangan, Perkantoran dan Perminyakan</span>
             </h5>
           </div>
         </div>
@@ -221,9 +121,9 @@
 
                 <q-card-section>
                   <div class="text-overline text-orange-9">Overline</div>
-                  <div :class="about_heading_1" :style="'color: ' + about_heading_color_1" class="about_heading_1 text-h6 q-mt-sm q-mb-xs">OFFICE PHILOSOPHY</div>
+                  <div :class="about_heading_1" :style="'color: ' + about_heading_color_1" class="about_heading_1 text-h6 q-mt-sm q-mb-xs">PELAYANAN 24/7</div>
                   <div class="text-caption text-grey-9">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Customer Support kami siap membantu Anda 24 jam nonstop.
                   </div>
                 </q-card-section>
               </q-card>
@@ -236,9 +136,9 @@
 
                 <q-card-section>
                   <div class="text-overline text-orange-9">Overline</div>
-                  <div :class="about_heading_2" :style="'color: ' + about_heading_color_2" class="text-h6 q-mt-sm q-mb-xs">OFFICE MISSION</div>
+                  <div :class="about_heading_2" :style="'color: ' + about_heading_color_2" class="text-h6 q-mt-sm q-mb-xs">KUALITAS</div>
                   <div class="text-caption text-grey-9">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Maintanance dengan Teknisi Handal dan Berkualitas.
                   </div>
                 </q-card-section>
               </q-card>
@@ -251,10 +151,9 @@
 
                 <q-card-section>
                   <div class="text-overline text-orange-9">Overline</div>
-                  <div :class="about_heading_3" :style="'color: ' + about_heading_color_3" class="text-h6 q-mt-sm q-mb-xs">OFFICE VALUE & RULES</div>
+                  <div :class="about_heading_3" :style="'color: ' + about_heading_color_3" class="text-h6 q-mt-sm q-mb-xs">LOW COST</div>
                   <div class="text-caption text-grey-9">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
+                    Pelayanan dengan biaya terjangkau termasuk garansi dengan S&K.
                   </div>
                 </q-card-section>
               </q-card>
@@ -622,74 +521,6 @@ labore et dolore magna aliqua.
         <br>
         <br>
         </div></div>
-<div class="row" id="id_news">
-          <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <h5 class="text-center">Latest News
-              <br>
-              <span
-                class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-            </h5>
-          </div>
-        </div>
-        <div class="row text-center flex flex-center">
-          <div class="col-md-12 col-lg-12 col-sx-12 col-sm-12 q-gutter-md flex flex-center">
-            <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <q-card @mouseover="hoverOver(1)" @mouseout="hoverOutTimeout(1)" style="border: none;" class="my-card text-center box-shadow" flat bordered>
-                <q-img
-                  src="/statics/images/about_1.jpg"
-                />
-
-                <q-card-section class="text-left">
-
-                  <div :class="about_heading_1" :style="'color: ' + about_heading_color_1" class="about_heading_1 text-h6 q-mt-sm q-mb-xs">LATEST NEWS 1</div>
-                  <div class="text-caption text-grey-9 q-mt-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </div>
-<div><br>
-<q-btn size="sm" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <q-card @mouseover="hoverOver(2)" @mouseout="hoverOutTimeout(2)" :style="'color: ' + about_heading_color_2" style="border: none;" class="my-card text-center box-shadow" flat bordered>
-                <q-img
-                  src="/statics/images/about_2.jpg"
-                />
-
-                <q-card-section class="text-left">
-
-                  <div :class="about_heading_2" :style="'color: ' + about_heading_color_2" class="text-h6 q-mt-sm q-mb-xs">LATEST NEWS 2</div>
-                  <div class="text-caption text-grey-9 q-mt-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </div>
-<div><br>
-<q-btn size="sm" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
-                </q-card-section>
-              </q-card>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sx-12 col-sm-12">
-              <q-card @mouseover="hoverOver(3)" @mouseout="hoverOutTimeout(3)" style="border: none;" class="my-card text-center box-shadow" flat bordered>
-                <q-img
-                  src="/statics/images/about_3.jpg"
-                />
-
-                <q-card-section class="text-left">
-
-                  <div :class="about_heading_3" :style="'color: ' + about_heading_color_3" class="text-h6 q-mt-sm q-mb-xs">LATEST NEWS 3</div>
-                  <div class="text-caption text-grey-9 q-mt-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                  </div>
-<div><br>
-<q-btn size="sm" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
-</div>
-                </q-card-section>
-              </q-card>
-            </div>
-          </div>
-        </div>
         <br>
         <br>
 <div class="contact_us" id="id_contact_us">

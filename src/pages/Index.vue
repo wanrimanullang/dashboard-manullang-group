@@ -8,8 +8,8 @@
         <q-tab :style= "[selected_tab == 't_0' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_portfolio');" style="width:120px;min-height:auto !important;color: white" label="Dokumentasi" />
         <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="Tentang Kami" />
         <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Layanan" />
-        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Testimoni" />
-        <q-tab :style= "[selected_tab == 't_5' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_pricing');" style="width:120px;min-height:auto !important;color: white" label="Galeri" />
+        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Product" />
+        <!-- <q-tab :style= "[selected_tab == 't_5' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_pricing');" style="width:120px;min-height:auto !important;color: white" label="Galeri" /> -->
       </q-tabs>
         
       </q-toolbar>
@@ -29,13 +29,13 @@
           transition-next="slide-left"
           height="639px"
         >
-      <q-carousel-slide class="q-pa-none" :name="1" img-src="/statics/images/image_1.jpg">
+      <q-carousel-slide class="q-pa-none" :name="1" img-src="/statics/images/image_3.jpg">
         <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
           <div class="custom-caption">
             <div class="text-h2 main_line animation_2">Melayani <br></br><span :style="'color:'+theme_color">Service Genset Berkualitas</span></div><br><br><br>
             <div class="text-h4 animation_1">Teknisi Profesional<br>& Handal.</div><br><br><br>
             <div class="animation_2">
-              <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
+              <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477" label="READ MORE" />
             </div>
           </div>
         </div>
@@ -46,18 +46,18 @@
           <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:'+theme_color">Penyewaan dan Rental Genset</span></div><br><br><br>
           <div class="text-h4 animation_1">Luar dalam kota Samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
+            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
           </div>
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide class="q-pa-none":name="3" img-src="/statics/images/image_3.jpg">
+      <q-carousel-slide class="q-pa-none":name="3" img-src="/statics/images/image_1.jpg">
       <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
         <div class="custom-caption">
-        <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:'+theme_color">Melayani <br></br></span>Replacement Genset Location</div><br><br><br>
+        <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:'+theme_color">Melayani <br></br></span>Jasa Pemindahan Lokasi Genset</div><br><br><br>
           <div class="text-h4 animation_1">daerah luar kota samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" label="READ MORE"/>
+            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             <h5 class="text-center">Tentang kami
               <br>
               <span
-                class="text-center text-grey text-h6">Kami melayani berbagai service yaitu menyewakan Genset, Melayani Maintanance Genset, dan Melayani Pemindahan Lokasi Genset. Kami berpengalaman dalam bidang Kelistrikan dan sudah bekerja sama beberapa perusahaan besar di samarinda yang meliputi Pertambangan, Perkantoran dan Perminyakan</span>
+                class="text-center text-grey text-h6">Kami melayani berbagai service yaitu menyewakan Genset, Melayani Maintanance Genset, dan Melayani Pemindahan Lokasi Genset. Kami berpengalaman dalam bidang Kelistrikan dan sudah bekerja sama beberapa perusahaan besar di samarinda yang meliputi Sektor Pertambangan, Perkantoran, Perkebunan dan Perminyakan</span>
             </h5>
           </div>
         </div>
@@ -120,7 +120,7 @@
                 />
 
                 <q-card-section>
-                  <div class="text-overline text-orange-9">Overline</div>
+                  <div class="text-overline text-orange-9">Power Manullang Group</div>
                   <div :class="about_heading_1" :style="'color: ' + about_heading_color_1" class="about_heading_1 text-h6 q-mt-sm q-mb-xs">PELAYANAN 24/7</div>
                   <div class="text-caption text-grey-9">
                     Customer Support kami siap membantu Anda 24 jam nonstop.
@@ -135,7 +135,7 @@
                 />
 
                 <q-card-section>
-                  <div class="text-overline text-orange-9">Overline</div>
+                  <div class="text-overline text-orange-9">Power Manullang Group</div>
                   <div :class="about_heading_2" :style="'color: ' + about_heading_color_2" class="text-h6 q-mt-sm q-mb-xs">KUALITAS</div>
                   <div class="text-caption text-grey-9">
                     Maintanance dengan Teknisi Handal dan Berkualitas.
@@ -150,10 +150,10 @@
                 />
 
                 <q-card-section>
-                  <div class="text-overline text-orange-9">Overline</div>
+                  <div class="text-overline text-orange-9">Power Manullang Group</div>
                   <div :class="about_heading_3" :style="'color: ' + about_heading_color_3" class="text-h6 q-mt-sm q-mb-xs">LOW COST</div>
                   <div class="text-caption text-grey-9">
-                    Pelayanan dengan biaya terjangkau termasuk garansi dengan S&K.
+                    Pelayanan biaya terjangkau termasuk garansi S&K Berlaku.
                   </div>
                 </q-card-section>
               </q-card>
@@ -165,10 +165,10 @@
         <div style="background: #f7f7f7" id="id_services">
           <div class="row">
             <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-              <h5 class="text-center">Our Services
+              <h5 class="text-center">Layanan Kami
                 <br>
                 <span
-                  class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  class="text-center text-grey text-h6">Kami memiliki berbagai layanan yang dapat membantu anda dalam menjalankan sebuah bisnis.</span>
               </h5>
             </div>
           </div> 
@@ -177,33 +177,33 @@
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs ">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="compare_arrows" size="65px"></q-icon>
+                    <q-icon name="hourglass_top" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Blockchain</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Short Rent Genset</q-item-label>
+                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu singkat 12 - 24 jam. kegiatan acara pernikahan, event konser, bazar, festival dan lain lain.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="web" size="65px"></q-icon>
+                    <q-icon name="date_range" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Web Design</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Long Term Rent Genset</q-item-label>
+                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu lama 1 bulan sampai 6 bulan. bekerja sama dengan perusahaan pertambangan, perminyakan, perkantoran, Industri dan lain lain.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="fab fa-wordpress" size="65px"></q-icon>
+                    <q-icon name="settings_suggest" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Wordpress</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Service Genset</q-item-label>
+                    <q-item-label class="text-grey-8">Melayani service atau perbaikan Genset yang sudah Overhaul (Mesin Mati Total).</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
@@ -212,33 +212,33 @@
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs ">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="settings" size="65px"></q-icon>
+                    <q-icon name="pin_drop" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">DevOps</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Relokasi Genset</q-item-label>
+                    <q-item-label class="text-grey-8">Melayani pemindahan Genset dari lokasi dengan menggunakan kendaraan dan alat lengkap.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="fas fa-database" size="65px"></q-icon>
+                    <q-icon name="support_agent" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Big Data</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Costumer Support</q-item-label>
+                    <q-item-label class="text-grey-8">Melayani konsultasi terkait Penyewaan Genset, Perbaikan Genset, Pemindahan Genset dan lain lain.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
                   <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
-                    <q-icon name="dynamic_feed" size="65px"></q-icon>
+                    <q-icon name="local_mall" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
-                    <q-item-label class="text-h6 text-grey-9 text-uppercase">AI</q-item-label>
-                    <q-item-label class="text-grey-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q-item-label>
+                    <q-item-label class="text-h6 text-grey-9 text-uppercase">Partner Bisnis</q-item-label>
+                    <q-item-label class="text-grey-8">Melayani sebagai Partner bisnis dalam bekerja sama dalam hal pembelian dan penjualan Genset.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
@@ -260,36 +260,43 @@
       class="text-white full-height bg-transparent q-mx-xl"
     >
       <q-carousel-slide style="padding-bottom: 140px" name="style" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_1.jpg" width=150 height=150>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_1.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">John Doe</span><br><span class="text-overline">Organization Founder</span>
+	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">20 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-labore et dolore magna aliqua.
+          Genset Perkins 20 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+ bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya.
         </div>
       </q-carousel-slide>
       <q-carousel-slide style="padding-bottom: 140px" name="tv" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_2.jpg" width=150 height=150>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_2.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">John Doe</span><br><span class="text-overline">Lead Developer</span>
+	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">50 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-labore et dolore magna aliqua.
+         Genset Perkins 50 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+ bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
         </div>
       </q-carousel-slide>
       <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_3.jpg" width=150 height=150>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_3.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">John Doe</span><br><span class="text-overline">Product Owner</span>
+	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">100 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Lorem ipsum dolor sit amet, consectetur
-adipiscing elit, sed do eiusmod tempor incididunt ut<br>
-labore et dolore magna aliqua.
+          Genset Perkins 100 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+ bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_4.jpg" width=400 height=400>
+	<div class="q-mt-md text-h6 text-center">
+	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">200 kVA (Kilo Volt Ampere)</span>
+	</div>
+        <div class="q-mt-md text-h6 text-center">
+          Genset Perkins 200 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+ bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -297,10 +304,10 @@ labore et dolore magna aliqua.
 </div>
         <div class="row" id="id_team">
             <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-              <h5 class="text-center">Our Team
+              <h5 class="text-center">Produk Kami
                 <br>
                 <span
-                  class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                  class="text-center text-grey text-h6">Menyediakan beberapa Produk sesuai dengan kebutuhan anda.</span>
               </h5>
             </div>
           </div>        
@@ -312,7 +319,7 @@ labore et dolore magna aliqua.
               transition-next="slide-left"
               swipeable
               animated
-	      infinite
+	            infinite
               autoplay
               control-color="primary"
               navigation
@@ -325,7 +332,7 @@ labore et dolore magna aliqua.
                   <span v-for="index in 4" :key="index">
                   <q-flashcard :no-hover="hover" :style="team_style">
                     <q-flashcard-section transition="['nudge-out', 'fade-out']" :active="active">
-                      <img :src="'/statics/images/team_'+index+'.jpg'" width=260 height=263>
+                      <img :src="'/statics/images/team_'+index+'.jpg'" width=264 height=263>
                     </q-flashcard-section>
                     <q-flashcard-section transition="fade-in" class="fit" :active="active">
                       <div class="fit" :style="background_style"></div>
@@ -349,7 +356,7 @@ labore et dolore magna aliqua.
             </q-carousel>
             </div>
           </div>          
-          <div class="pricing" id="id_pricing">
+          <!-- <div class="pricing" id="id_pricing">
           <div class="" style="background-color: #000000ad !important;">
           <div class="row">
             <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
@@ -520,34 +527,34 @@ labore et dolore magna aliqua.
         </div>   
         <br>
         <br>
-        </div></div>
+        </div></div> -->
         <br>
         <br>
 <div class="contact_us" id="id_contact_us">
 <div style="background-color: #000000ad !important;">
 <div class="row" id="id_news">
   <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-    <h5 class="text-center text-white">Contact Us
+    <h5 class="text-center text-white">Kontak Kami
       <br>
       <span
-        class="text-center text-grey text-h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        class="text-center text-grey text-h6">Kami melayani konsultasi pelanggan dengan sesuai kebutuhan anda.</span>
     </h5>
   </div>
 </div>
 <div class="row text-center flex flex-center q-pb-lg">
 
 <div class="col-md-6 col-lg-6 col-sx-12 col-sm-12 q-gutter-lg q-px-xl q-pb-none q-ma-none">
-	      <q-input bg-color="white" outlined label="Your Name *">
+	      <q-input bg-color="white" outlined label="Nama *">
 		<template v-slot:append>
 		  <q-icon name="event" :style="'color:' + theme_color" />
 		</template>
 	      </q-input>
-<q-input bg-color="white" outlined label="Your Email *">
+<q-input bg-color="white" outlined label="Email *">
 		<template v-slot:append>
 		  <q-icon name="event" :style="'color:' + theme_color" />
 		</template>
 	      </q-input>
-<q-input bg-color="white" outlined label="Your Phone *">
+<q-input bg-color="white" outlined label="Nomor Telepon *">
 		<template v-slot:append>
 		  <q-icon name="event" :style="'color:' + theme_color" />
 		</template>
@@ -569,18 +576,15 @@ labore et dolore magna aliqua.
 </div>
 </div>
         <q-toolbar class="flex flex-center text-white" style="background-color: #1c1b21;" :style="'border-top: 2px solid '+ theme_color">
-           <div class="q-pa-sm q-gutter-sm">
-	    <q-btn round type="a" href="https://twitter.com/mayank91193"
-                     :style="'background:'+ theme_color +'; color: white !important;'" icon="fab fa-twitter" />
-	    <q-btn round type="a" href="https://github.com/mayank091193/vue-quasar-company-profile-website"
-                     :style="'background:'+ theme_color +'; color: white !important;'" icon="fab fa-github" />
-            <q-btn round type="a" href="mailto:mayank091193@gmail.com"
-                     :style="'background:'+ theme_color +'; color: white !important;'" icon="email" />
-	    <q-btn round type="a" href="https://github.com/sponsors/mayank091193"
-                     :style="'background:'+ theme_color +'; color: white !important;'" glossy text-color="black" icon="fas fa-heart" />
+          <div class="q-pa-sm q-gutter-sm">
+	    <q-btn round type="a" href="tel:62811552477"
+                    :style="'background:'+ theme_color +'; color: white !important;'" icon="call" />
+            <q-btn round type="a" href="mailto:admin@manullang-group.com"
+                    :style="'background:'+ theme_color +'; color: white !important;'" icon="email" />
+	    <q-btn round type="a" href="https://wa.me/62811552477"
+                    :style="'background:'+ theme_color +'; color: white !important;'" glossy text-color="black" icon="whatsapp" />
 	  </div>
         </q-toolbar>
-
       </q-page>
     </q-page-container>
   </q-layout>

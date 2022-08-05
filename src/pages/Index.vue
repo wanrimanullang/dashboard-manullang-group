@@ -2,14 +2,15 @@
   <q-layout view="lHh lpr lFf">
     <q-header class="q-py-sm" style="background-color: #1c1b21;" :style="'border-bottom: 2px solid '+ theme_color">
         <q-toolbar>
-        <span :style="'font-size: 35px;color:'+theme_color" class="my-font text-h6 q-mr-md">Power Manullang Group</span>
+        <span :style="'font-size: 35px;color:rgb(144, 164, 174)'" class="my-font text-h6 q-mr-md">Power Manullang Group</span>
         <q-space ></q-space>
       <q-tabs v-model="selected_tab" shrink>
-        <q-tab :style= "[selected_tab == 't_0' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_portfolio');" style="width:120px;min-height:auto !important;color: white" label="Dokumentasi" />
-        <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="Tentang Kami" />
-        <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Layanan" />
-        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Product" />
-        <!-- <q-tab :style= "[selected_tab == 't_5' ? {backgroundColor: theme_color} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_pricing');" style="width:120px;min-height:auto !important;color: white" label="Galeri" /> -->
+        <q-tab :style= "[selected_tab == 't_0' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_portfolio');" style="width:120px;min-height:auto !important;color: white" label="Dokumentasi" />
+        <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="Tentang Kami" />
+        <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Layanan" />
+        <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Product" />
+        <q-tab><q-btn size="md" :style="' color: white'" href="https://wa.me/62811552477"  label="Hubungi Kami"/></q-tab>
+        <!-- <q-tab  :style= "[selected_tab == 't_5' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" style="width:120px;min-height:auto !important;color: white" label="Hubungi Kami" /> -->
       </q-tabs>
         
       </q-toolbar>
@@ -32,10 +33,10 @@
       <q-carousel-slide class="q-pa-none" :name="1" img-src="/statics/images/image_3.jpg">
         <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
           <div class="custom-caption">
-            <div class="text-h2 main_line animation_2">Melayani <br></br><span :style="'color:'+theme_color">Service Genset Berkualitas</span></div><br><br><br>
+            <div class="text-h2 main_line animation_2">Melayani <br></br><span :style="'color:rgb(144, 164, 174)'">Service Genset Berkualitas</span></div><br><br><br>
             <div class="text-h4 animation_1">Teknisi Profesional<br>& Handal.</div><br><br><br>
             <div class="animation_2">
-              <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477" label="READ MORE" />
+              <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477" label="READ MORE" />
             </div>
           </div>
         </div>
@@ -43,10 +44,10 @@
       <q-carousel-slide class="q-pa-none":name="2" img-src="/statics/images/image_2.jpg">
         <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
           <div class="custom-caption">
-          <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:'+theme_color">Penyewaan dan Rental Genset</span></div><br><br><br>
+          <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:rgb(144, 164, 174)'">Penyewaan dan Rental Genset</span></div><br><br><br>
           <div class="text-h4 animation_1">Luar dalam kota Samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
+            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
           </div>
           </div>
         </div>
@@ -54,10 +55,10 @@
       <q-carousel-slide class="q-pa-none":name="3" img-src="/statics/images/image_1.jpg">
       <div class="full-height full-width flex flex-center" style="background-color: rgba(0, 0, 0, 0.68) !important;">
         <div class="custom-caption">
-        <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:'+theme_color">Melayani <br></br></span>Jasa Pemindahan Lokasi Genset</div><br><br><br>
+        <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:rgb(144, 164, 174)'">Melayani <br></br></span>Jasa Pemindahan Lokasi Genset</div><br><br><br>
           <div class="text-h4 animation_1">daerah luar kota samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:'+ theme_color +'; color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
+            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
           </div>
         </div>
       </div>
@@ -92,7 +93,7 @@
                       </q-flashcard-section>
                       <q-flashcard-section transition="fade-in" class="fit flex justify-center items-end q-pb-lg"
                                           :active="active">
-                        <q-btn :style="'color:'+theme_color" style="background-color:white" round icon="link"/>
+                        <q-btn :style="'color:rgb(144, 164, 174)'" style="background-color:white" round icon="link"/>
                       </q-flashcard-section>
                     </q-flashcard-section>
                   </q-flashcard>
@@ -176,34 +177,34 @@
             <div class="row q-col-gutter-sm ">
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs ">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="hourglass_top" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
                     <q-item-label class="text-h6 text-grey-9 text-uppercase">Short Rent Genset</q-item-label>
-                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu singkat 12 - 24 jam. kegiatan acara pernikahan, event konser, bazar, festival dan lain lain.</q-item-label>
+                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu singkat 12 - 24 jam. kegiatan acara pernikahan, konser, festival dan lain lain.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="date_range" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
                     <q-item-label class="text-h6 text-grey-9 text-uppercase">Long Term Rent Genset</q-item-label>
-                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu lama 1 bulan sampai 6 bulan. bekerja sama dengan perusahaan pertambangan, perminyakan, perkantoran, Industri dan lain lain.</q-item-label>
+                    <q-item-label class="text-grey-8">Penyewaan Genset dengan jangka waktu lama 1 bulan sampai 6 bulan. sudah bekerja sama beberapa sektor.</q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="settings_suggest" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
                     <q-item-label class="text-h6 text-grey-9 text-uppercase">Service Genset</q-item-label>
-                    <q-item-label class="text-grey-8">Melayani service atau perbaikan Genset yang sudah Overhaul (Mesin Mati Total).</q-item-label>
+                    <q-item-label class="text-grey-8">Melayani service atau perbaikan Genset yang sudah Overhaul (Mesin Mati Total) langsung di lokasi. </q-item-label>
                   </q-item-section>
                 </q-item>
               </div>
@@ -211,7 +212,7 @@
             <div class="row q-col-gutter-sm q-mt-lg">
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs ">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="pin_drop" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
@@ -222,7 +223,7 @@
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="support_agent" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
@@ -233,7 +234,7 @@
               </div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                 <q-item class="box-shadow q-pa-none q-ml-xs q-mr-xs">
-                  <q-item-section side :style="'background-color:' + theme_color" class="q-pa-sm q-mr-none text-white">
+                  <q-item-section side :style="'background-color:rgb(144, 164, 174)'" class="q-pa-sm q-mr-none text-white">
                     <q-icon name="local_mall" size="65px"></q-icon>
                   </q-item-section>
                   <q-item-section class="q-pa-md q-ml-none">
@@ -260,42 +261,42 @@
       class="text-white full-height bg-transparent q-mx-xl"
     >
       <q-carousel-slide style="padding-bottom: 140px" name="style" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_1.jpg" width=400 height=400>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid rgb(144, 164, 174)'" src="/statics/images/team_1.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">20 kVA (Kilo Volt Ampere)</span>
+	   <span :style="'color:rgb(144, 164, 174)'">Perkins</span><br><span class="text-overline">20 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Genset Perkins 20 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+          Genset Perkins 20 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,
  bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya.
         </div>
       </q-carousel-slide>
       <q-carousel-slide style="padding-bottom: 140px" name="tv" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_2.jpg" width=400 height=400>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid rgb(144, 164, 174)'" src="/statics/images/team_2.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">50 kVA (Kilo Volt Ampere)</span>
+	   <span :style="'color:rgb(144, 164, 174)'">Perkins</span><br><span class="text-overline">50 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-         Genset Perkins 50 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+         Genset Perkins 50 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,
  bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
         </div>
       </q-carousel-slide>
       <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_3.jpg" width=400 height=400>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid rgb(144, 164, 174)'" src="/statics/images/team_3.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">100 kVA (Kilo Volt Ampere)</span>
+	   <span :style="'color:rgb(144, 164, 174)'">Perkins</span><br><span class="text-overline">100 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Genset Perkins 100 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+          Genset Perkins 100 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,
  bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
         </div>
       </q-carousel-slide>
       <q-carousel-slide style="padding-bottom: 140px" name="layers" class="column no-wrap flex-center">
-        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid ' + theme_color" src="/statics/images/team_4.jpg" width=400 height=400>
+        <img :style="'margin-top:100px;border-radius:5px;border: 4px solid rgb(144, 164, 174)'" src="/statics/images/team_4.jpg" width=400 height=400>
 	<div class="q-mt-md text-h6 text-center">
-	   <span :style="'color:'+theme_color">Perkins</span><br><span class="text-overline">200 kVA (Kilo Volt Ampere)</span>
+	   <span :style="'color:rgb(144, 164, 174)'">Perkins</span><br><span class="text-overline">200 kVA (Kilo Volt Ampere)</span>
 	</div>
         <div class="q-mt-md text-h6 text-center">
-          Genset Perkins 200 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,<br>
+          Genset Perkins 200 kVA silent type stamford menggunakan casing baja berkualitas tinggi dan tahan terhadap panas sinar matahari dan air hujan serta dilengkapi dengan peredam suara berkualitas tinggi. Genset Perkins 20 kVA silent type stamford sangat cocok dipakai di tempat- tempat terbuka yang banyak dipakai di instansi perkantoran,
  bank, peternakan, cafe atau restaurant, hotel, apartement dan lain sebagainya
         </div>
       </q-carousel-slide>
@@ -344,9 +345,9 @@
                       </q-flashcard-section>
                       <q-flashcard-section style="padding-bottom: 50px" transition="slide-up-in" class="fit flex justify-center items-end"
                                            :active="active">
-                        <q-btn class="q-mr-md" :style="'color:'+theme_color" style="background-color:white" round
+                        <q-btn class="q-mr-md" :style="'color:rgb(144, 164, 174)'" style="background-color:white" round
                                icon="card_giftcard"/>
-                        <q-btn :style="'color:'+theme_color" style="background-color:white" round icon="link"/>
+                        <q-btn :style="'color:rgb(144, 164, 174)'" style="background-color:white" round icon="link"/>
                       </q-flashcard-section>
                     </q-flashcard-section>
                   </q-flashcard>
@@ -546,31 +547,31 @@
 <div class="col-md-6 col-lg-6 col-sx-12 col-sm-12 q-gutter-lg q-px-xl q-pb-none q-ma-none">
 	      <q-input bg-color="white" outlined label="Nama *">
 		<template v-slot:append>
-		  <q-icon name="event" :style="'color:' + theme_color" />
+		  <q-icon name="event" :style="'color:rgb(144, 164, 174)'" />
 		</template>
 	      </q-input>
 <q-input bg-color="white" outlined label="Email *">
 		<template v-slot:append>
-		  <q-icon name="event" :style="'color:' + theme_color" />
+		  <q-icon name="event" :style="'color:rgb(144, 164, 174)'" />
 		</template>
 	      </q-input>
 <q-input bg-color="white" outlined label="Nomor Telepon *">
 		<template v-slot:append>
-		  <q-icon name="event" :style="'color:' + theme_color" />
+		  <q-icon name="event" :style="'color:rgb(144, 164, 174)'" />
 		</template>
 	      </q-input>
 </div>
 <div class="col-md-6 col-lg-6 col-sx-12 col-sm-12 q-gutter-lg q-px-xl q-pb-none q-ma-none">
 <q-input class="" type="textarea" bg-color="white" outlined label="Your Message *">
 <template v-slot:append>
-		  <q-icon name="event" :style="'color:' + theme_color" />
+		  <q-icon name="event" :style="'color:rgb(144, 164, 174)'" />
 		</template>
-	      </q-input>
+</q-input>
 </div>
 </div>
 <div class="row flex flex-center text-center q-pb-xl q-mt-md">
 <div class="col-md-12 col-lg-12 col-sx-12 col-sm-12">
-<q-btn size="lg" :style="'background:'+ theme_color +'; color: white'" label="Send Message"/>
+<q-btn size="lg" :style="'background:rgb(144, 164, 174); color: white'" label="Send Message"/>
 </div>
 </div>
 </div>
@@ -578,11 +579,11 @@
         <q-toolbar class="flex flex-center text-white" style="background-color: #1c1b21;" :style="'border-top: 2px solid '+ theme_color">
           <div class="q-pa-sm q-gutter-sm">
 	    <q-btn round type="a" href="tel:62811552477"
-                    :style="'background:'+ theme_color +'; color: white !important;'" icon="call" />
+                    :style="'background:rgb(144, 164, 174); color: white !important;'" icon="call" />
             <q-btn round type="a" href="mailto:admin@manullang-group.com"
-                    :style="'background:'+ theme_color +'; color: white !important;'" icon="email" />
+                    :style="'background:rgb(144, 164, 174); color: white !important;'" icon="email" />
 	    <q-btn round type="a" href="https://wa.me/62811552477"
-                    :style="'background:'+ theme_color +'; color: white !important;'" glossy text-color="black" icon="whatsapp" />
+                    :style="'background:rgb(144, 164, 174); color: white !important;'" glossy text-color="black" icon="whatsapp" />
 	  </div>
         </q-toolbar>
       </q-page>

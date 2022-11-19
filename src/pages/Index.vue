@@ -9,7 +9,7 @@
         <q-tab :style= "[selected_tab == 't_1' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_about_us');" style="width:120px;min-height:auto !important;color: white" label="Tentang Kami" />
         <q-tab :style= "[selected_tab == 't_2' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_services');" style="width:120px;min-height:auto !important;color: white" label="Layanan" />
         <q-tab :style= "[selected_tab == 't_3' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" @click="scrollToElement('id_testimonial');" style="min-height:auto !important;color: white" label="Product" />
-        <q-tab><q-btn size="md" :style="' color: white'" href="https://wa.me/62811552477"  label="Hubungi Kami"/></q-tab>
+        <q-tab><q-btn size="md" :style="' color: white'" href="https://wa.me/62811530051"  label="Hubungi Kami"/></q-tab>
         <!-- <q-tab  :style= "[selected_tab == 't_5' ? {backgroundColor: 'rgb(144, 164, 174)'} : {}]" class="q-mr-sm q-py-xs custom_tab" style="width:120px;min-height:auto !important;color: white" label="Hubungi Kami" /> -->
       </q-tabs>
         
@@ -36,7 +36,7 @@
             <div class="text-h2 main_line animation_2">Melayani <br></br><span :style="'color:rgb(144, 164, 174)'">Service Genset Berkualitas</span></div><br><br><br>
             <div class="text-h4 animation_1">Teknisi Profesional<br>& Handal.</div><br><br><br>
             <div class="animation_2">
-              <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477" label="READ MORE" />
+              <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811530051" label="READ MORE" />
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
           <div class="text-h2 main_line animation_2" style="font-size:65px;"><span :style="'color:rgb(144, 164, 174)'">Penyewaan dan Rental Genset</span></div><br><br><br>
           <div class="text-h4 animation_1">Luar dalam kota Samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
+            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811530051"  label="READ MORE"/>
           </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="text-h2 main_line animation_2" style="font-size:65px;"> <span :style="'color:rgb(144, 164, 174)'">Melayani <br></br></span>Jasa Pemindahan Lokasi Genset</div><br><br><br>
           <div class="text-h4 animation_1">daerah luar kota samarinda.</div><br><br><br>
           <div class="animation_2">
-            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811552477"  label="READ MORE"/>
+            <q-btn size="md" :style="'background:rgb(144, 164, 174); color: white'" href="https://wa.me/62811530051"  label="READ MORE"/>
           </div>
         </div>
       </div>
@@ -578,11 +578,11 @@
 </div>
         <q-toolbar class="flex flex-center text-white" style="background-color: #1c1b21;" :style="'border-top: 2px solid '+ theme_color">
           <div class="q-pa-sm q-gutter-sm">
-	    <q-btn round type="a" href="tel:62811552477"
+	    <q-btn round type="a" href="tel:62811530051"
                     :style="'background:rgb(144, 164, 174); color: white !important;'" icon="call" />
             <q-btn round type="a" href="mailto:admin@manullang-group.com"
                     :style="'background:rgb(144, 164, 174); color: white !important;'" icon="email" />
-	    <q-btn round type="a" href="https://wa.me/62811552477"
+	    <q-btn round type="a" href="https://wa.me/62811530051"
                     :style="'background:rgb(144, 164, 174); color: white !important;'" glossy text-color="black" icon="whatsapp" />
 	  </div>
         </q-toolbar>

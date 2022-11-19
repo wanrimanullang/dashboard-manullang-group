@@ -102,9 +102,9 @@ module.exports = function (/* ctx */) {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
-        name: 'Office Website Using Quasar',
-        short_name: 'Office Website Using Quasar',
-        description: 'Free template for office website.',
+        name: 'CV MANULLANG POWER GROUP',
+        short_name: 'CV MPG',
+        description: 'Rental dan Service Genset.',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
